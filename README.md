@@ -1,6 +1,7 @@
-A simple todo app.
-Features: 
-    1. Add todo
-    2. Delete todo
-    3. Complete todo
-    4. Sort by Priority
+# Simple Todo App
+
+## Features
+- Add todo
+- Delete todo
+- Complete todo
+- Sort by Priority
