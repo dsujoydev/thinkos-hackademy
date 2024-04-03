@@ -32,15 +32,17 @@ const createTodoItem = (todo) => {
   const todoItem = document.createElement("li");
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  checkbox.classList.add("form-checkbox", "mr-2");
   checkbox.addEventListener("change", () => {
     todoItem.classList.toggle("completed", checkbox.checked);
   });
   const label = document.createElement("label");
   label.textContent = todo.name;
+  label.classList.add("text-lg", "ml-4");
 
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
-  deleteBtn.classList.add("delete-btn");
+  deleteBtn.classList.add("bg-red-500", "text-white", "py-1", "px-2", "rounded", "ml-4");
   deleteBtn.addEventListener("click", () => deleteTodoItem(todo.id));
 
   todoItem.appendChild(checkbox);
