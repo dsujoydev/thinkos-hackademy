@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      .completed label {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 p-4">
+    <div class="max-w-md mx-auto">
+      <h1 class="text-2xl font-bold mb-4">Todo List</h1>
+      <!-- Todo Form -->
+      <form id="todo-form" class="mb-4">
+        <input id="todo-title" type="text" placeholder="Enter task..." class="w-full border rounded py-2 px-3 mb-2" />
+        <input id="todo-tag" type="text" placeholder="Enter tag..." class="w-full border rounded py-2 px-3 mb-2" />
+        <select id="todo-priority" class="w-full border rounded py-2 px-3 mb-2">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded">Add Todo</button>
+      </form>
+      <!-- Todo List -->
+      <ul id="todo-list" class="space-y-2">
+        <!-- Todo items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="todo.js"></script>
+  </body>
+</html>
